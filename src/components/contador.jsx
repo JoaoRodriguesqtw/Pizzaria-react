@@ -2,15 +2,6 @@ import { useState } from "react";
 
 
 
-// const somar = () => {
-// setTotal(total + 1);
-// setUltimo("soma");
-// };
-
-
-
-
-
 function contador(props){
     const [contador, setContador] = useState(0);
 
