@@ -82,7 +82,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-.logo:hover{
+.Logo:hover{
   transform: scale(1.05);
   transition: transform 0.3s ease;
   cursor: pointer;
