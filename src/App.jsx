@@ -4,6 +4,8 @@ import { useState } from "react";
 // import viteLogo from "./assets/vite.svg";
 import "./App.css";
 
+import pizzaLogo from "./img/hydra_sem_fundo.png";
+
 
 import Card from "./components/card";
 import Contador from "./components/contador"
@@ -19,6 +21,7 @@ function App() {
   return (
     <>
     <h1>Funerária pizzaria</h1>
+    <img src={pizzaLogo} alt="Logo da Pizzaria Hydra" className="Logo" />
 
     <div className="centralizar">
       <Header titulo="Sobre nós" descricao="O morto de ontem, é a pizza do dia!" />
