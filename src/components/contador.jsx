@@ -6,8 +6,8 @@ function contador(props){
     const [contador, setContador] = useState(0);
 
     function valida_numero(contador){
-    if(contador < 0){
-        setContador(0)
+    if(contador < 1){
+        setContador(1)
         return contador
     }
     return contador
