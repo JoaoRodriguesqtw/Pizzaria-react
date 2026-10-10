@@ -1,45 +1,83 @@
 # Funerária Pizzaria
 
-Interface web experimental de uma pizzaria temática, desenvolvida com **React**. O projeto apresenta a identidade visual da marca Hydra e reúne um cardápio, um contador de pessoas para reserva e um carrinho de itens selecionados.
+Projeto desenvolvido em **React** com **Vite**, criado como uma interface temática de uma pizzaria inspirada em uma funerária. A aplicação apresenta um cardápio, um contador de pessoas para reservas e um carrinho de itens selecionados.
 
-> **Status:** protótipo em desenvolvimento. A versão recebida contém a pasta `src/` e os assets da aplicação, mas não inclui os arquivos de configuração do projeto, como `package.json` e `index.html`.
+## Demonstração
+
+A aplicação possui uma interface com:
+
+- Tema escuro;
+- Identidade visual em vermelho e tons terrosos;
+- Logotipo da Pizzaria Hydra;
+- Cardápio temático;
+- Contador de pessoas para reserva;
+- Carrinho de pizzas;
+- Layout responsivo para dispositivos móveis;
+- Configuração preparada para publicação no GitHub Pages.
 
 ## Funcionalidades
 
-- Exibição do título e do logotipo da Pizzaria Hydra.
-- Seção institucional com uma descrição temática.
-- Listagem de pratos disponíveis e esgotados.
-- Contador de pessoas para uma reserva, com controles para aumentar e diminuir a quantidade.
-- Carrinho local com botões para adicionar pizzas.
-- Layout responsivo para telas menores.
-- Tema visual escuro, com detalhes em vermelho e tons terrosos.
+### Cardápio
 
-## Tecnologias
+A aplicação exibe os pratos disponíveis no cardápio:
 
-- [React](https://react.dev/ )
-- [Vite](https://vite.dev/ )
-- JavaScript (JSX)
+| Produto | Preço | Disponibilidade |
+|---|---:|---|
+| Pizza de cérebro | R$ 45,00 | Disponível |
+| Pizza de coração humano | R$ 85,00 | Disponível |
+| Pizza de fígado humano | R$ 45,00 | Disponível |
+| Sorvete de pele humana | R$ 45,00 | Esgotado |
+
+Os produtos são armazenados atualmente em listas estáticas dentro dos componentes React.
+
+### Contador de reserva
+
+O componente de contador permite definir para quantas pessoas será feita a reserva.
+
+É possível:
+
+- Aumentar a quantidade de pessoas;
+- Diminuir a quantidade de pessoas;
+- Impedir que o valor fique abaixo de 1.
+
+### Carrinho
+
+O carrinho permite adicionar alguns produtos por meio de botões:
+
+- Pizza de cérebro;
+- Pizza de coração;
+- Pizza de fígado.
+
+Os itens são armazenados utilizando o estado local do React.
+
+> O carrinho ainda está em desenvolvimento e não possui persistência de dados, cálculo de total ou integração com backend.
+
+## Tecnologias utilizadas
+
+- [React](https://react.dev/ ) `19.2.8`
+- [React DOM](https://react.dev/reference/react-dom ) `19.2.8`
+- [Vite](https://vite.dev/ ) `8.3.0`
+- JavaScript
+- JSX
 - CSS3
-- React Hooks (`useState`)
+- React Hooks
+- ESLint
+- GitHub Pages
+- `gh-pages`
 
-## Estrutura do projeto
+## Pré-requisitos
 
-```text
-.
-├── README.md
-└── src/
-    ├── App.jsx                 # Componente raiz da aplicação
-    ├── App.css                 # Estilos principais da interface
-    ├── index.css               # Estilos globais
-    ├── main.jsx                # Ponto de entrada do React
-    ├── assets/
-    │   ├── hero.png
-    │   ├── react.svg
-    │   └── vite.svg
-    ├── components/
-    │   ├── card.jsx            # Cardápio de pratos
-    │   ├── carrinho.jsx        # Carrinho de reserva
-    │   ├── contador.jsx        # Contador de pessoas
-    │   └── header.jsx          # Seção “Sobre nós”
-    └── img/
-        └── hydra_sem_fundo.png # Logotipo da aplicação
+Antes de executar o projeto, certifique-se de possuir:
+
+- [Node.js](https://nodejs.org/ ) instalado;
+- npm instalado junto com o Node.js;
+- Git, caso queira versionar ou publicar o projeto;
+- Um navegador moderno.
+
+Recomenda-se utilizar uma versão recente do Node.js, como a versão 20 ou superior.
+
+Para verificar as versões instaladas:
+
+```bash
+node --version
+npm --version
