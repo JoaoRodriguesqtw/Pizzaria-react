@@ -1,16 +1,45 @@
-# React + Vite
+# Funerária Pizzaria
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interface web experimental de uma pizzaria temática, desenvolvida com **React**. O projeto apresenta a identidade visual da marca Hydra e reúne um cardápio, um contador de pessoas para reserva e um carrinho de itens selecionados.
 
-Currently, two official plugins are available:
+> **Status:** protótipo em desenvolvimento. A versão recebida contém a pasta `src/` e os assets da aplicação, mas não inclui os arquivos de configuração do projeto, como `package.json` e `index.html`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Funcionalidades
 
-## React Compiler
+- Exibição do título e do logotipo da Pizzaria Hydra.
+- Seção institucional com uma descrição temática.
+- Listagem de pratos disponíveis e esgotados.
+- Contador de pessoas para uma reserva, com controles para aumentar e diminuir a quantidade.
+- Carrinho local com botões para adicionar pizzas.
+- Layout responsivo para telas menores.
+- Tema visual escuro, com detalhes em vermelho e tons terrosos.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologias
 
-## Expanding the ESLint configuration
+- [React](https://react.dev/ )
+- [Vite](https://vite.dev/ )
+- JavaScript (JSX)
+- CSS3
+- React Hooks (`useState`)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Estrutura do projeto
+
+```text
+.
+├── README.md
+└── src/
+    ├── App.jsx                 # Componente raiz da aplicação
+    ├── App.css                 # Estilos principais da interface
+    ├── index.css               # Estilos globais
+    ├── main.jsx                # Ponto de entrada do React
+    ├── assets/
+    │   ├── hero.png
+    │   ├── react.svg
+    │   └── vite.svg
+    ├── components/
+    │   ├── card.jsx            # Cardápio de pratos
+    │   ├── carrinho.jsx        # Carrinho de reserva
+    │   ├── contador.jsx        # Contador de pessoas
+    │   └── header.jsx          # Seção “Sobre nós”
+    └── img/
+        └── hydra_sem_fundo.png # Logotipo da aplicação
