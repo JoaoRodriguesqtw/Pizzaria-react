@@ -234,3 +234,92 @@ button:hover{
   }
 }
 
+
+
+/* reserva css */
+
+/* reserva css */
+
+.reserva {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  padding: 30px;
+  background: linear-gradient(145deg, #24201e, #191716);
+  border: 1px solid #493b32;
+  border-top: 4px solid #8f2020;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reserva:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.reserva h2 {
+  color: #c62828;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #493b32;
+  padding-bottom: 15px;
+}
+
+.reserva p {
+  color: #c3b8aa;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* campos dentro da reserva */
+
+.reserva .centralizar {
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin: 20px auto 0;
+}
+
+.reserva .centralizar div {
+  width: 100%;
+  color: #d4b483;
+  text-align: left;
+}
+
+.reserva input {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 12px;
+  background-color: #302925;
+  color: #e8e0d5;
+  border: 2px solid #493b32;
+  border-radius: 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.reserva input:focus {
+  outline: none;
+  border-color: #8f2020;
+}
+
+.reserva button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #302925;
+  color: #e8e0d5;
+  border: 2px solid #493b32;
+  border-radius: 10px;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.reserva button:hover {
+  background-color: #40322c;
+  border-color: #8f2020;
+}
+
+/* nome

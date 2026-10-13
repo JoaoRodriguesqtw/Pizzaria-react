@@ -11,6 +11,7 @@ import Card from "./components/card";
 import Contador from "./components/contador"
 import Carrinho from "./components/carrinho"
 import Header from "./components/header";
+import Reservas from "./components/reserva"
 
 
 
@@ -38,7 +39,14 @@ function App() {
     <div className="centralizar">
       <Carrinho titulo="Carrinho da reserva" descricao="clique no item que foi adicionado ao carrinho para deletar"/>
     </div>
+
+    <div className="centralizar">
+     <Reservas titulo="Enviar reserva"/> 
+    </div>
+
     </>
+
+   
 
   );
 }
