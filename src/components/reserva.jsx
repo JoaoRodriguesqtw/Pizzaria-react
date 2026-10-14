@@ -37,7 +37,7 @@ const [visivel, setVisivel] = useState(false);
         </div>
 
 
-        <button onClick={mostrar}>Mostrar nome</button>
+        <button onClick={mostrar}>Enviar</button>
         {visivel && <p>{nome_completo}</p>}
       </div>
     </div>
